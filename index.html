@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sea Battle Manager</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery-2.1.4.min.js"></script>
+    <script src="field_backend.js" charset="utf-8"></script>
+    <script src="field_render_manager.js" charset="utf-8"></script>
+    <script src="recommendations_renderer.js" charset="utf-8"></script>
+    <script src="own_shots_renderer.js" charset="utf-8"></script>
+    <script src="ships_placement_renderer.js" charset="utf-8"></script>
+    <script src="opp_shots_renderer.js" charset="utf-8"></script>
+    <script src="hit_ship_neighbors_renderer.js" charset="utf-8"></script>
+    <script src="ui.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <div class="field-panel">
+      <div id="opp-field" class="field"></div>
+      <div class="ui-segment">
+        <p class="ui-header">Рекоммендации:</p>
+        <form action="">
+          <div class="ui-radio">
+            <input type="radio" name="recommendation" value="RecSetting.None" class="rec-toggler" checked="">Нет
+          </div>
+          <div class="ui-radio">
+            <input type="radio" name="recommendation" value="RecSetting.MainDiagonal"class="rec-toggler">По главной
+          </div>
+          <div class="ui-radio">
+            <input type="radio" name="recommendation" value="RecSetting.SecDiagonal" class="rec-toggler">По побочной
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="field-panel">
+      <div id="own-field" class="field"></div>
+      <div class="ui-segment">
+        <p class="ui-header">Режим:</p>
+        <form action="">
+          <div class="ui-radio">
+            <input type="radio" name="own-mode" value="Placing" class="own-mode" checked="">Расстановка
+          </div>
+          <div class="ui-radio">
+            <input type="radio" name="own-mode" value="Playing"class="own-mode">Игра
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

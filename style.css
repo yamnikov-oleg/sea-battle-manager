@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.field-panel {
+  float: left;
+  margin: 20px;
+}
+
+.cell {
+  box-sizing: border-box;
+  width: 32px;
+  height: 32px;
+
+  text-align: center;
+  padding-top: 7px;
+  font-size: 10pt;
+
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.2);
+  border-width: 0 1px 1px 0;
+}
+
+.cell.game {
+  color: transparent;
+  cursor: pointer;
+}
+
+.cell.game:hover, .cell.game.selected {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.cell.game.selected {
+  border: 2px solid rgb(199, 177, 27);
+}
+
+.cell.header {
+  cursor: default;
+}
+
+.ui-segment {
+  padding: 12px;
+  margin-top: 5px;
+}
+
+.ui-header {
+  font-weight: bold;
+  margin: 6px;
+}
+
+.ui-radio {
+  display: box;
+  float: left;
+  padding: 6px;
+  margin-right: 4px;
+}
+
+.ui-radio input[type=radio] {
+  margin-right: 4px;
+}
